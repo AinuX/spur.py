@@ -327,7 +327,7 @@ class SftpFile(object):
         
 
 def escape_sh(value):
-    return "'" + value.replace("'", "'\\''") + "'"
+    return value.replace("'", "'\\''")
 
 
 class SshProcess(object):
